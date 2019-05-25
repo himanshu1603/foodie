@@ -237,7 +237,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
           <button class="tablinks" onclick="openMenu(event, 'Breakfast')" id="defaultOpen" >Breakfast</button>
           <button class="tablinks" onclick="openMenu(event, 'Lunch')">Lunch</button>
           <button class="tablinks" onclick="openMenu(event, 'Dinner')">Dinner</button>
-          <button class="tablinks" onclick="openMenu(event, 'Backery')">Backery</button>
+          <button class="tablinks" onclick="openMenu(event, 'Backery')">Bakery</button>
         </div>
 
          
@@ -513,7 +513,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
 <!--    RESERVATION-->
     <div class="reservation" id="reserve">
        <h1 style="text-align: center; color: aliceblue;">Reservation</h1>
-        <div class="form">
+       <form class="form" name="reservation" method="POST" data-netlify="true">
            <div class="form-gp">
                <label for="name">Name</label>
                <br>
@@ -523,7 +523,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
            <div class="form-gp">
                <label for="email">Email</label>
                 <br>
-                 <input type="text" name="email" required>
+                 <input type="email" name="email" required>
            </div>
             
             <div class="form-gp">
@@ -557,8 +557,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
              </div>
              
              <input type="submit" value="Submit" class="inputBtn">
-            
-        </div>
+        </form>
     </div>
 
     
@@ -650,7 +649,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
 <!--    GET IN TOUCH-->
     <div class="contact" id="contact">
      <h1 style="text-align: center;margin-bottom: 20px; color: aliceblue;">Get in touch</h1>
-      <div class="contactForm">
+     <form class="contactForm" name="contact" method="POST" data-netlify="true">
       <p>Don't be a stranger, in case of booking for birthday, wedding etc contact us. In case of any enquiery or want to have chat with us feel free to contact.</p>
        <div class="form-gp">
                <label for="name">Name</label>
@@ -661,7 +660,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
            <div class="form-gp">
                <label for="email">Email</label>
                 <br>
-                 <input type="text" name="email" required>
+                 <input type="email" name="email" required>
            </div>
             
             <div class="form-gp">
@@ -674,7 +673,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
                 <label for="message">Message</label>
                 <br>
 
-                 <textarea rows="4" cols="50">
+                 <textarea rows="4" cols="50" name="message">
                 
                 </textarea>
                 
@@ -683,8 +682,7 @@ We hope that your visit to our restaurants will be one of your pleasant experien
 
 
             </div>
-            
-        </div>
+        </form>
         
     </div>
      
